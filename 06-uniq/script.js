@@ -8,7 +8,11 @@
 */
 
 function uniq(arr) {
-    // Напишите код здесь
+    let arr1 = [];
+    arr.forEach(element => {
+        arr1.includes(element) ? arr1 : arr1.push(element)
+    });
+    return arr1
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
