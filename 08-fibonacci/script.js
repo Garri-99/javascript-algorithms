@@ -9,7 +9,20 @@
 */
 
 function fibonacci(n) {
-    // Напишите код здесь
+    if (n == 1) return 0;
+    if (n == 2) return 1;
+
+    let a = 0;
+    let b = 1;
+    let c;
+    
+    for (let i = 3; i <= n; i++) {
+        c = a + b;
+        a = b;
+        b = c; 
+    }
+
+    return c
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
