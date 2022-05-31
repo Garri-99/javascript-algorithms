@@ -9,7 +9,12 @@
 */
 
 function anagram(str1, str2) {
-    // Напишите код здесь
+   let a = str1.toLowerCase().split('').sort().join('');
+   let b = str2.toLowerCase().split('').sort().join('');
+   console.log(a)
+   console.log(b)
+
+   return a === b
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
