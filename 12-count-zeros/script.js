@@ -7,7 +7,13 @@
 */
 
 function countZeros(n) {
-    // Напишите код здесь
+    let count = 0;
+    for (let i = 10; i <= n; i++) {
+        i.toString().split('').forEach(item => {
+            item == 0 ? count += 1 : count;
+        })
+    }
+    return count
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
