@@ -7,7 +7,7 @@
 */
 
 function primes(num) {
-    let arr = [];
+    const arr = [];
 
     for (let i = 2; i <= num; i++) {
        arr.push(i)

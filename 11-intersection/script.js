@@ -8,7 +8,7 @@
 */
 
 function intersection(arr1, arr2) {
-    let uniqArr = [];
+    const uniqArr = [];
 
     arr1.forEach(element => {
         uniqArr.includes(element) ? uniqArr : uniqArr.push(element)

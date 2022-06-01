@@ -16,7 +16,7 @@
 function palindrome(str) {
     if (!(typeof str == 'string')) return alert('Нужно ввести строку!');
 
-    let word = str.split('').filter((item) => {
+    const word = str.split('').filter((item) => {
        return ![' ', '.', '!', '?', '!', ','].includes(item)
        }).join('').toLowerCase() 
     return word == word.split('').reverse().join('') 
