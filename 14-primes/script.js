@@ -14,7 +14,7 @@ function primes(num) {
     }
 
    return arr.filter(j => {
-        for (let i = 2; i < j; i++) {
+        for (let i = 2; i <= Math.sqrt(j); i++) {
             if (j % i == 0) return false
         }
         return true

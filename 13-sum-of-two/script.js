@@ -9,9 +9,13 @@
 */
 
 function sumOfTwo(arr, sum) {
-    for (let i = 0; i < arr.length - 1; i++) {
-        for (let j = i + 1; j < arr.length; j++) {
-            if (arr[i] + arr[j] == sum) return true
+    const diff = [sum - arr[0]]
+    for (let i = 1; i < arr.length; i++) {
+        if (diff.includes(arr[i])) {
+            return true
+        } else {
+            const searchVal = sum = arr[i]
+            diff.push(searchVal)
         }
     }
     return false
@@ -20,4 +24,4 @@ function sumOfTwo(arr, sum) {
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
 console.log(sumOfTwo([1, 2, 3, 4, 5], 4)); // true (так как 1 + 3 === 4)
-console.log(sumOfTwo([1, 2, 3, 4, 5], 100)); // false
+console.log(sumOfTwo([2, 5, 3, 4, 1], 10)); // false
